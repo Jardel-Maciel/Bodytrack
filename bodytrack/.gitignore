@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Backend
+backend/.env
+backend/storage/photos/*
+!backend/storage/photos/.gitkeep
+
+# Node / Frontend
+node_modules/
+frontend/dist/
+frontend/.env
+frontend/tsconfig.tsbuildinfo
+
+# Deploy (raiz)
+.env
+
+# Editores / SO
+.vscode/
+.idea/
+.DS_Store
+
+# Testes
+.pytest_cache/
+.coverage
+htmlcov/
