@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 
+import ProfileEditForm from "@/components/profile/ProfileEditForm";
 import { useAuth } from "@/contexts/AuthContext";
 import { useProject } from "@/contexts/ProjectContext";
 import * as goalService from "@/services/goalService";
@@ -18,7 +19,7 @@ const GOAL_TYPE_LABELS: Record<GoalType, string> = {
 };
 
 export default function ProfilePage() {
-  const { user, logout } = useAuth();
+  const { logout } = useAuth();
   const { project } = useProject();
   const queryClient = useQueryClient();
   const [exporting, setExporting] = useState(false);
@@ -49,10 +50,7 @@ export default function ProfilePage() {
     <div className="space-y-5">
       <h1 className="text-lg font-semibold">Perfil</h1>
 
-      <div className="card">
-        <p className="font-medium">{user?.name}</p>
-        <p className="text-sm text-foreground-muted">{user?.email}</p>
-      </div>
+      <ProfileEditForm />
 
       {project && (
         <div className="card">

@@ -1,6 +1,7 @@
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 
 import MetricChart from "@/components/charts/MetricChart";
+import MeasurementForm from "@/components/measurements/MeasurementForm";
 import PhotoThumbnail from "@/components/photos/PhotoThumbnail";
 import PhotoUploadForm from "@/components/photos/PhotoUploadForm";
 import { useProject } from "@/contexts/ProjectContext";
@@ -58,6 +59,14 @@ export default function EvolutionPage() {
           ))}
         </section>
       )}
+
+      <MeasurementForm
+        projectId={project.id}
+        onSaved={() => {
+          queryClient.invalidateQueries({ queryKey: ["measurement-progress", project.id] });
+          queryClient.invalidateQueries({ queryKey: ["series", project.id] });
+        }}
+      />
 
       <MetricChart projectId={project.id} metric="waist_cm" title="Evolução da cintura" unit=" cm" />
       <MetricChart projectId={project.id} metric="abdomen_cm" title="Evolução do abdômen" unit=" cm" />

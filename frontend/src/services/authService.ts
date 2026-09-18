@@ -4,6 +4,14 @@ export interface AuthUser {
   id: string;
   email: string;
   name: string;
+  birth_date: string | null;
+  height_cm: number | null;
+}
+
+export interface ProfileUpdateInput {
+  name?: string;
+  birth_date?: string | null;
+  height_cm?: number | null;
 }
 
 interface TokenResponse {
@@ -23,5 +31,10 @@ export async function register(input: { email: string; password: string; name: s
 
 export async function me() {
   const { data } = await api.get<AuthUser>("/auth/me");
+  return data;
+}
+
+export async function updateMe(input: ProfileUpdateInput) {
+  const { data } = await api.patch<AuthUser>("/auth/me", input);
   return data;
 }
