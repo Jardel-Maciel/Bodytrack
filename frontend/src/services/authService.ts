@@ -6,12 +6,16 @@ export interface AuthUser {
   name: string;
   birth_date: string | null;
   height_cm: number | null;
+  role: UserRole;
 }
+
+export type UserRole = "student" | "trainer";
 
 export interface ProfileUpdateInput {
   name?: string;
   birth_date?: string | null;
   height_cm?: number | null;
+  role?: UserRole;
 }
 
 interface TokenResponse {
@@ -24,7 +28,7 @@ export async function login(email: string, password: string) {
   return data;
 }
 
-export async function register(input: { email: string; password: string; name: string }) {
+export async function register(input: { email: string; password: string; name: string; role?: UserRole }) {
   const { data } = await api.post<AuthUser>("/auth/register", input);
   return data;
 }

@@ -2,6 +2,7 @@ import { useQuery } from "@tanstack/react-query";
 
 import CreateProjectForm from "@/components/onboarding/CreateProjectForm";
 import MetricChart from "@/components/charts/MetricChart";
+import PointsCard from "@/components/gamification/PointsCard";
 import StatCard from "@/components/ui/StatCard";
 import { useProject } from "@/contexts/ProjectContext";
 import * as dashboardService from "@/services/dashboardService";
@@ -47,6 +48,8 @@ export default function HomePage() {
           {data.streak_days} {data.streak_days === 1 ? "dia consecutivo" : "dias consecutivos"} registrados
         </p>
       </header>
+
+      <PointsCard />
 
       <section className="grid grid-cols-2 gap-3">
         <StatCard label="Peso atual" value={fmtKg(data.current_weight_kg)} />

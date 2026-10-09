@@ -1,7 +1,9 @@
 import { NavLink } from "react-router-dom";
 import clsx from "clsx";
 
-const items = [
+import { useAuth } from "@/contexts/AuthContext";
+
+const baseItems = [
   { to: "/", label: "Início" },
   { to: "/hoje", label: "Hoje" },
   { to: "/treino", label: "Treino" },
@@ -9,8 +11,13 @@ const items = [
   { to: "/perfil", label: "Perfil" },
 ];
 
+/** Só contas de personal ganham a aba "Alunos" (antes de "Perfil"). */
+const trainerItem = { to: "/alunos", label: "Alunos" };
+
 /** Sidebar — visível apenas em telas médias/grandes (desktop/tablet). */
 export default function Sidebar() {
+  const { user } = useAuth();
+  const items = user?.role === "trainer" ? [...baseItems.slice(0, -1), trainerItem, baseItems[baseItems.length - 1]] : baseItems;
   return (
     <aside className="hidden w-56 shrink-0 border-r border-border bg-background-surface md:flex md:flex-col">
       <div className="px-5 py-6">

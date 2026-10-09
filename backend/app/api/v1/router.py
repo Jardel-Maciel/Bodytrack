@@ -11,12 +11,18 @@ from app.api.v1.endpoints import (
     auth,
     checkins,
     dashboard,
+    chat,
+    exercise_catalog,
+    gamification,
+    notifications,
     goals,
     measurements,
     photos,
     projects,
     reports,
     series,
+    trainer,
+    trainer_links,
     workouts,
 )
 
@@ -24,6 +30,9 @@ api_router = APIRouter()
 
 api_router.include_router(auth.router, prefix="/auth", tags=["auth"])
 api_router.include_router(projects.router, prefix="/projects", tags=["projects"])
+api_router.include_router(
+    exercise_catalog.router, prefix="/exercise-catalog", tags=["exercise-catalog"]
+)
 
 # Recursos aninhados em /projects/{project_id}/... — cada um pertence a
 # um projeto específico, nunca são acessados soltos.
@@ -40,3 +49,10 @@ api_router.include_router(reports.router, prefix="/projects/{project_id}/reports
 api_router.include_router(
     achievements.router, prefix="/projects/{project_id}/achievements", tags=["achievements"]
 )
+
+# Área do personal e vínculos aluno <-> personal
+api_router.include_router(trainer.router, prefix="/trainer", tags=["trainer"])
+api_router.include_router(trainer_links.router, prefix="/trainer-links", tags=["trainer-links"])
+api_router.include_router(notifications.router, prefix="/notifications", tags=["notifications"])
+api_router.include_router(chat.router, prefix="/chat", tags=["chat"])
+api_router.include_router(gamification.router, prefix="/gamification", tags=["gamification"])

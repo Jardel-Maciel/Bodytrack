@@ -43,7 +43,33 @@ export default defineConfig({
         ],
       },
       workbox: {
+        // As ~170 imagens de exercícios (3,5 MB) NÃO entram no pré-cache (baixaria
+        // tudo na instalação do app). Em vez disso, cada imagem é guardada na
+        // primeira vez que é vista e passa a funcionar offline (CacheFirst).
         globPatterns: ["**/*.{js,css,html,ico,png,svg}"],
+        runtimeCaching: [
+          {
+            urlPattern: ({ url }) => url.pathname.startsWith("/exercises/"),
+            handler: "CacheFirst",
+            options: {
+              cacheName: "exercise-images",
+              expiration: { maxEntries: 300, maxAgeSeconds: 60 * 60 * 24 * 90 },
+              cacheableResponse: { statuses: [200] },
+            },
+          },
+          {
+            // Vídeos próprios: o <video> pede o arquivo em pedaços (Range); sem
+            // rangeRequests o cache offline não consegue responder a esses pedidos.
+            urlPattern: ({ url }) => url.pathname.startsWith("/exercise-videos/"),
+            handler: "CacheFirst",
+            options: {
+              cacheName: "exercise-videos",
+              expiration: { maxEntries: 120, maxAgeSeconds: 60 * 60 * 24 * 90 },
+              cacheableResponse: { statuses: [200] },
+              rangeRequests: true,
+            },
+          },
+        ],
       },
     }),
   ],

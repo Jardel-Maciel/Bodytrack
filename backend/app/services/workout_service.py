@@ -3,6 +3,7 @@ from typing import Any, Sequence
 
 from sqlalchemy.orm import Session
 
+from app.services import gamification_service
 from app.models.workout import Workout, WorkoutSession
 from app.repositories import workout_repository as repo
 from app.schemas.workout import ExerciseProgress, ExerciseProgressPoint
@@ -62,7 +63,9 @@ def log_session(
         if set_data["workout_exercise_id"] not in valid_exercise_ids:
             raise InvalidExerciseForWorkoutError()
 
-    return repo.create_session(db, workout_id=workout_id, data=data)
+    session = repo.create_session(db, workout_id=workout_id, data=data)
+    gamification_service.on_session(db, user_id, session.date)
+    return session
 
 
 def list_sessions(

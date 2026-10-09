@@ -1,0 +1,1589 @@
+[
+  {
+    "id": "Barbell_Bench_Press_-_Medium_Grip",
+    "name": "Supino reto com barra",
+    "aliases": [
+      "supino reto",
+      "supino",
+      "supino com barra",
+      "supino barra",
+      "bench press"
+    ],
+    "primary_muscles": [
+      "Peito"
+    ],
+    "secondary_muscles": [
+      "Ombros",
+      "Tríceps"
+    ],
+    "equipment": "Barra",
+    "image_count": 2
+  },
+  {
+    "id": "Dumbbell_Bench_Press",
+    "name": "Supino reto com halteres",
+    "aliases": [
+      "supino halteres",
+      "supino com halter",
+      "supino reto halter",
+      "supino reto com halter"
+    ],
+    "primary_muscles": [
+      "Peito"
+    ],
+    "secondary_muscles": [
+      "Ombros",
+      "Tríceps"
+    ],
+    "equipment": "Halteres",
+    "image_count": 2
+  },
+  {
+    "id": "Incline_Dumbbell_Press",
+    "name": "Supino inclinado com halteres",
+    "aliases": [
+      "supino inclinado",
+      "supino inclinado halter",
+      "supino inclinado com halter"
+    ],
+    "primary_muscles": [
+      "Peito"
+    ],
+    "secondary_muscles": [
+      "Ombros",
+      "Tríceps"
+    ],
+    "equipment": "Halteres",
+    "image_count": 2
+  },
+  {
+    "id": "Barbell_Incline_Bench_Press_-_Medium_Grip",
+    "name": "Supino inclinado com barra",
+    "aliases": [
+      "supino inclinado barra"
+    ],
+    "primary_muscles": [
+      "Peito"
+    ],
+    "secondary_muscles": [
+      "Ombros",
+      "Tríceps"
+    ],
+    "equipment": "Barra",
+    "image_count": 2
+  },
+  {
+    "id": "Decline_Barbell_Bench_Press",
+    "name": "Supino declinado com barra",
+    "aliases": [
+      "supino declinado"
+    ],
+    "primary_muscles": [
+      "Peito"
+    ],
+    "secondary_muscles": [
+      "Ombros",
+      "Tríceps"
+    ],
+    "equipment": "Barra",
+    "image_count": 2
+  },
+  {
+    "id": "Machine_Bench_Press",
+    "name": "Supino na máquina",
+    "aliases": [
+      "supino maquina",
+      "chest press",
+      "supino articulado"
+    ],
+    "primary_muscles": [
+      "Peito"
+    ],
+    "secondary_muscles": [
+      "Ombros",
+      "Tríceps"
+    ],
+    "equipment": "Máquina",
+    "image_count": 2
+  },
+  {
+    "id": "Close-Grip_Barbell_Bench_Press",
+    "name": "Supino fechado",
+    "aliases": [
+      "supino pegada fechada",
+      "supino fechado com barra"
+    ],
+    "primary_muscles": [
+      "Tríceps"
+    ],
+    "secondary_muscles": [
+      "Peito",
+      "Ombros"
+    ],
+    "equipment": "Barra",
+    "image_count": 2
+  },
+  {
+    "id": "Dumbbell_Flyes",
+    "name": "Crucifixo reto com halteres",
+    "aliases": [
+      "crucifixo",
+      "crucifixo reto",
+      "crucifixo halter",
+      "crucifixo com halteres"
+    ],
+    "primary_muscles": [
+      "Peito"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Halteres",
+    "image_count": 2
+  },
+  {
+    "id": "Incline_Dumbbell_Flyes",
+    "name": "Crucifixo inclinado com halteres",
+    "aliases": [
+      "crucifixo inclinado",
+      "crucifixo inclinado halter"
+    ],
+    "primary_muscles": [
+      "Peito"
+    ],
+    "secondary_muscles": [
+      "Ombros"
+    ],
+    "equipment": "Halteres",
+    "image_count": 2
+  },
+  {
+    "id": "Butterfly",
+    "name": "Voador (peck deck)",
+    "aliases": [
+      "voador",
+      "peck deck",
+      "pec deck",
+      "crucifixo maquina",
+      "crucifixo na maquina",
+      "fly maquina"
+    ],
+    "primary_muscles": [
+      "Peito"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Máquina",
+    "image_count": 2
+  },
+  {
+    "id": "Cable_Crossover",
+    "name": "Crossover na polia",
+    "aliases": [
+      "crossover",
+      "cross over",
+      "crucifixo polia",
+      "crucifixo na polia",
+      "cabo cruzado"
+    ],
+    "primary_muscles": [
+      "Peito"
+    ],
+    "secondary_muscles": [
+      "Ombros"
+    ],
+    "equipment": "Polia",
+    "image_count": 2
+  },
+  {
+    "id": "Pushups",
+    "name": "Flexão de braço",
+    "aliases": [
+      "flexao",
+      "flexao de braco",
+      "push up",
+      "pushup",
+      "flexao de bracos"
+    ],
+    "primary_muscles": [
+      "Peito"
+    ],
+    "secondary_muscles": [
+      "Ombros",
+      "Tríceps"
+    ],
+    "equipment": "Peso do corpo",
+    "image_count": 2
+  },
+  {
+    "id": "Dips_-_Chest_Version",
+    "name": "Paralelas (foco no peito)",
+    "aliases": [
+      "paralelas peito",
+      "mergulho peito",
+      "dips peito"
+    ],
+    "primary_muscles": [
+      "Peito"
+    ],
+    "secondary_muscles": [
+      "Ombros",
+      "Tríceps"
+    ],
+    "equipment": "Outro",
+    "image_count": 2
+  },
+  {
+    "id": "Bent-Arm_Dumbbell_Pullover",
+    "name": "Pullover com halter",
+    "aliases": [
+      "pullover",
+      "pull over",
+      "pullover halter"
+    ],
+    "primary_muscles": [
+      "Peito"
+    ],
+    "secondary_muscles": [
+      "Dorsais",
+      "Ombros",
+      "Tríceps"
+    ],
+    "equipment": "Halteres",
+    "image_count": 2
+  },
+  {
+    "id": "Wide-Grip_Lat_Pulldown",
+    "name": "Puxada frontal aberta",
+    "aliases": [
+      "puxada frontal",
+      "puxada na frente",
+      "puxada alta",
+      "pulldown",
+      "puxada aberta",
+      "puxada pela frente",
+      "puxada pegada aberta",
+      "lat pulldown"
+    ],
+    "primary_muscles": [
+      "Dorsais"
+    ],
+    "secondary_muscles": [
+      "Bíceps",
+      "Costas (meio)",
+      "Ombros"
+    ],
+    "equipment": "Polia",
+    "image_count": 2
+  },
+  {
+    "id": "Close-Grip_Front_Lat_Pulldown",
+    "name": "Puxada frontal fechada",
+    "aliases": [
+      "puxada fechada",
+      "puxada triangulo",
+      "puxada pegada fechada",
+      "puxada com triangulo"
+    ],
+    "primary_muscles": [
+      "Dorsais"
+    ],
+    "secondary_muscles": [
+      "Bíceps",
+      "Costas (meio)",
+      "Ombros"
+    ],
+    "equipment": "Polia",
+    "image_count": 2
+  },
+  {
+    "id": "Underhand_Cable_Pulldowns",
+    "name": "Puxada supinada",
+    "aliases": [
+      "puxada invertida",
+      "puxada pegada supinada",
+      "puxada pegada invertida"
+    ],
+    "primary_muscles": [
+      "Dorsais"
+    ],
+    "secondary_muscles": [
+      "Bíceps",
+      "Costas (meio)",
+      "Ombros"
+    ],
+    "equipment": "Polia",
+    "image_count": 2
+  },
+  {
+    "id": "Seated_Cable_Rows",
+    "name": "Remada baixa na polia",
+    "aliases": [
+      "remada baixa",
+      "remada sentada",
+      "remada na polia",
+      "remada polia baixa",
+      "remada baixa triangulo",
+      "remada sentado",
+      "remada sentada na polia"
+    ],
+    "primary_muscles": [
+      "Costas (meio)"
+    ],
+    "secondary_muscles": [
+      "Bíceps",
+      "Dorsais",
+      "Ombros"
+    ],
+    "equipment": "Polia",
+    "image_count": 2
+  },
+  {
+    "id": "Bent_Over_Barbell_Row",
+    "name": "Remada curvada com barra",
+    "aliases": [
+      "remada curvada",
+      "remada barra",
+      "remada com barra"
+    ],
+    "primary_muscles": [
+      "Costas (meio)"
+    ],
+    "secondary_muscles": [
+      "Bíceps",
+      "Dorsais",
+      "Ombros"
+    ],
+    "equipment": "Barra",
+    "image_count": 2
+  },
+  {
+    "id": "One-Arm_Dumbbell_Row",
+    "name": "Remada unilateral com halter",
+    "aliases": [
+      "serrote",
+      "remada serrote",
+      "remada unilateral",
+      "remada com halter",
+      "remada unilateral halter"
+    ],
+    "primary_muscles": [
+      "Costas (meio)"
+    ],
+    "secondary_muscles": [
+      "Bíceps",
+      "Dorsais",
+      "Ombros"
+    ],
+    "equipment": "Halteres",
+    "image_count": 2
+  },
+  {
+    "id": "T-Bar_Row_with_Handle",
+    "name": "Remada cavalinho",
+    "aliases": [
+      "remada t",
+      "cavalinho",
+      "remada em t",
+      "t bar row"
+    ],
+    "primary_muscles": [
+      "Costas (meio)"
+    ],
+    "secondary_muscles": [
+      "Bíceps",
+      "Dorsais"
+    ],
+    "equipment": "Barra",
+    "image_count": 2
+  },
+  {
+    "id": "Pullups",
+    "name": "Barra fixa",
+    "aliases": [
+      "barra fixa pronada",
+      "pull up",
+      "pullup",
+      "barra fixa aberta"
+    ],
+    "primary_muscles": [
+      "Dorsais"
+    ],
+    "secondary_muscles": [
+      "Bíceps",
+      "Costas (meio)"
+    ],
+    "equipment": "Peso do corpo",
+    "image_count": 2
+  },
+  {
+    "id": "Chin-Up",
+    "name": "Barra fixa supinada",
+    "aliases": [
+      "chin up",
+      "chinup",
+      "barra supinada"
+    ],
+    "primary_muscles": [
+      "Dorsais"
+    ],
+    "secondary_muscles": [
+      "Bíceps",
+      "Antebraços",
+      "Costas (meio)"
+    ],
+    "equipment": "Peso do corpo",
+    "image_count": 2
+  },
+  {
+    "id": "Straight-Arm_Pulldown",
+    "name": "Pulldown com braços estendidos",
+    "aliases": [
+      "pulldown braco reto",
+      "pullover na polia",
+      "pull down",
+      "pulldown na polia",
+      "pulldown corda"
+    ],
+    "primary_muscles": [
+      "Dorsais"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Polia",
+    "image_count": 2
+  },
+  {
+    "id": "Hyperextensions_Back_Extensions",
+    "name": "Extensão lombar",
+    "aliases": [
+      "hiperextensao",
+      "banco lombar",
+      "extensao lombar no banco",
+      "lombar no banco",
+      "hyperextension"
+    ],
+    "primary_muscles": [
+      "Lombar"
+    ],
+    "secondary_muscles": [
+      "Glúteos",
+      "Posterior de coxa"
+    ],
+    "equipment": "Outro",
+    "image_count": 2
+  },
+  {
+    "id": "Barbell_Deadlift",
+    "name": "Levantamento terra",
+    "aliases": [
+      "terra",
+      "deadlift",
+      "levantamento terra com barra"
+    ],
+    "primary_muscles": [
+      "Lombar"
+    ],
+    "secondary_muscles": [
+      "Panturrilhas",
+      "Antebraços",
+      "Glúteos",
+      "Posterior de coxa",
+      "Dorsais",
+      "Costas (meio)",
+      "Quadríceps",
+      "Trapézio"
+    ],
+    "equipment": "Barra",
+    "image_count": 2
+  },
+  {
+    "id": "Romanian_Deadlift",
+    "name": "Levantamento terra romeno",
+    "aliases": [
+      "terra romeno",
+      "rdl",
+      "romanian deadlift",
+      "levantamento romeno"
+    ],
+    "primary_muscles": [
+      "Posterior de coxa"
+    ],
+    "secondary_muscles": [
+      "Panturrilhas",
+      "Glúteos",
+      "Lombar"
+    ],
+    "equipment": "Barra",
+    "image_count": 2
+  },
+  {
+    "id": "Stiff-Legged_Barbell_Deadlift",
+    "name": "Stiff com barra",
+    "aliases": [
+      "stiff",
+      "stiff barra",
+      "levantamento stiff"
+    ],
+    "primary_muscles": [
+      "Posterior de coxa"
+    ],
+    "secondary_muscles": [
+      "Glúteos",
+      "Lombar"
+    ],
+    "equipment": "Barra",
+    "image_count": 2
+  },
+  {
+    "id": "Barbell_Shrug",
+    "name": "Encolhimento com barra",
+    "aliases": [
+      "encolhimento",
+      "encolhimento de ombros",
+      "encolhimento barra",
+      "trapezio com barra"
+    ],
+    "primary_muscles": [
+      "Trapézio"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Barra",
+    "image_count": 2
+  },
+  {
+    "id": "Dumbbell_Shrug",
+    "name": "Encolhimento com halteres",
+    "aliases": [
+      "encolhimento halter",
+      "encolhimento com halter",
+      "trapezio com halteres"
+    ],
+    "primary_muscles": [
+      "Trapézio"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Halteres",
+    "image_count": 2
+  },
+  {
+    "id": "Face_Pull",
+    "name": "Face pull",
+    "aliases": [
+      "facepull",
+      "puxada para o rosto",
+      "face pull na polia",
+      "puxada de rosto"
+    ],
+    "primary_muscles": [
+      "Ombros"
+    ],
+    "secondary_muscles": [
+      "Costas (meio)"
+    ],
+    "equipment": "Polia",
+    "image_count": 2
+  },
+  {
+    "id": "Barbell_Shoulder_Press",
+    "name": "Desenvolvimento com barra",
+    "aliases": [
+      "desenvolvimento",
+      "desenvolvimento militar",
+      "desenvolvimento barra",
+      "military press",
+      "shoulder press barra"
+    ],
+    "primary_muscles": [
+      "Ombros"
+    ],
+    "secondary_muscles": [
+      "Peito",
+      "Tríceps"
+    ],
+    "equipment": "Barra",
+    "image_count": 2
+  },
+  {
+    "id": "Dumbbell_Shoulder_Press",
+    "name": "Desenvolvimento com halteres",
+    "aliases": [
+      "desenvolvimento halter",
+      "desenvolvimento com halter",
+      "shoulder press",
+      "desenvolvimento ombro"
+    ],
+    "primary_muscles": [
+      "Ombros"
+    ],
+    "secondary_muscles": [
+      "Tríceps"
+    ],
+    "equipment": "Halteres",
+    "image_count": 2
+  },
+  {
+    "id": "Arnold_Dumbbell_Press",
+    "name": "Desenvolvimento Arnold",
+    "aliases": [
+      "arnold press",
+      "desenvolvimento arnold com halteres",
+      "arnold"
+    ],
+    "primary_muscles": [
+      "Ombros"
+    ],
+    "secondary_muscles": [
+      "Tríceps"
+    ],
+    "equipment": "Halteres",
+    "image_count": 2
+  },
+  {
+    "id": "Machine_Shoulder_Military_Press",
+    "name": "Desenvolvimento na máquina",
+    "aliases": [
+      "desenvolvimento maquina",
+      "desenvolvimento articulado",
+      "shoulder press maquina"
+    ],
+    "primary_muscles": [
+      "Ombros"
+    ],
+    "secondary_muscles": [
+      "Tríceps"
+    ],
+    "equipment": "Máquina",
+    "image_count": 2
+  },
+  {
+    "id": "Side_Lateral_Raise",
+    "name": "Elevação lateral",
+    "aliases": [
+      "elevacao lateral com halteres",
+      "lateral",
+      "elevacao lateral halter",
+      "elevacao lateral de ombro"
+    ],
+    "primary_muscles": [
+      "Ombros"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Halteres",
+    "image_count": 2
+  },
+  {
+    "id": "Front_Dumbbell_Raise",
+    "name": "Elevação frontal",
+    "aliases": [
+      "elevacao frontal com halteres",
+      "frontal",
+      "elevacao frontal halter"
+    ],
+    "primary_muscles": [
+      "Ombros"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Halteres",
+    "image_count": 2
+  },
+  {
+    "id": "Reverse_Flyes",
+    "name": "Crucifixo inverso com halteres",
+    "aliases": [
+      "crucifixo invertido",
+      "posterior de ombro",
+      "crucifixo inverso",
+      "elevacao posterior",
+      "deltoide posterior"
+    ],
+    "primary_muscles": [
+      "Ombros"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Halteres",
+    "image_count": 2
+  },
+  {
+    "id": "Reverse_Machine_Flyes",
+    "name": "Crucifixo inverso na máquina",
+    "aliases": [
+      "voador invertido",
+      "peck deck invertido",
+      "crucifixo invertido maquina",
+      "voador inverso"
+    ],
+    "primary_muscles": [
+      "Ombros"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Máquina",
+    "image_count": 2
+  },
+  {
+    "id": "Upright_Barbell_Row",
+    "name": "Remada alta",
+    "aliases": [
+      "remada alta com barra",
+      "remada alta barra",
+      "upright row"
+    ],
+    "primary_muscles": [
+      "Ombros"
+    ],
+    "secondary_muscles": [
+      "Trapézio"
+    ],
+    "equipment": "Barra",
+    "image_count": 2
+  },
+  {
+    "id": "Barbell_Curl",
+    "name": "Rosca direta com barra",
+    "aliases": [
+      "rosca direta",
+      "rosca barra",
+      "rosca com barra",
+      "rosca direta barra reta"
+    ],
+    "primary_muscles": [
+      "Bíceps"
+    ],
+    "secondary_muscles": [
+      "Antebraços"
+    ],
+    "equipment": "Barra",
+    "image_count": 2
+  },
+  {
+    "id": "EZ-Bar_Curl",
+    "name": "Rosca direta com barra W",
+    "aliases": [
+      "rosca w",
+      "rosca barra w",
+      "rosca com barra w",
+      "rosca barra ez",
+      "rosca ez"
+    ],
+    "primary_muscles": [
+      "Bíceps"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Barra W",
+    "image_count": 2
+  },
+  {
+    "id": "Dumbbell_Alternate_Bicep_Curl",
+    "name": "Rosca alternada com halteres",
+    "aliases": [
+      "rosca alternada",
+      "rosca halter",
+      "rosca com halteres",
+      "rosca alternada halter"
+    ],
+    "primary_muscles": [
+      "Bíceps"
+    ],
+    "secondary_muscles": [
+      "Antebraços"
+    ],
+    "equipment": "Halteres",
+    "image_count": 2
+  },
+  {
+    "id": "Hammer_Curls",
+    "name": "Rosca martelo",
+    "aliases": [
+      "rosca martelo com halteres",
+      "martelo",
+      "rosca martelo halter"
+    ],
+    "primary_muscles": [
+      "Bíceps"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Halteres",
+    "image_count": 2
+  },
+  {
+    "id": "Preacher_Curl",
+    "name": "Rosca Scott",
+    "aliases": [
+      "scott",
+      "rosca scott barra",
+      "rosca banco scott",
+      "rosca no banco scott"
+    ],
+    "primary_muscles": [
+      "Bíceps"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Barra",
+    "image_count": 2
+  },
+  {
+    "id": "Alternate_Incline_Dumbbell_Curl",
+    "name": "Rosca inclinada com halteres",
+    "aliases": [
+      "rosca inclinada",
+      "rosca no banco inclinado"
+    ],
+    "primary_muscles": [
+      "Bíceps"
+    ],
+    "secondary_muscles": [
+      "Antebraços"
+    ],
+    "equipment": "Halteres",
+    "image_count": 2
+  },
+  {
+    "id": "Concentration_Curls",
+    "name": "Rosca concentrada",
+    "aliases": [
+      "rosca concentrada com halter",
+      "concentrada"
+    ],
+    "primary_muscles": [
+      "Bíceps"
+    ],
+    "secondary_muscles": [
+      "Antebraços"
+    ],
+    "equipment": "Halteres",
+    "image_count": 2
+  },
+  {
+    "id": "Standing_Biceps_Cable_Curl",
+    "name": "Rosca na polia",
+    "aliases": [
+      "rosca polia",
+      "rosca direta na polia",
+      "rosca cabo",
+      "rosca na polia baixa"
+    ],
+    "primary_muscles": [
+      "Bíceps"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Polia",
+    "image_count": 2
+  },
+  {
+    "id": "Triceps_Pushdown",
+    "name": "Tríceps pulley (barra)",
+    "aliases": [
+      "triceps pulley",
+      "triceps na polia",
+      "triceps polia",
+      "triceps barra",
+      "pulley triceps",
+      "triceps pushdown",
+      "triceps polia barra"
+    ],
+    "primary_muscles": [
+      "Tríceps"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Polia",
+    "image_count": 2
+  },
+  {
+    "id": "Triceps_Pushdown_-_Rope_Attachment",
+    "name": "Tríceps corda",
+    "aliases": [
+      "triceps na corda",
+      "triceps polia corda",
+      "triceps com corda",
+      "pulley corda",
+      "triceps pulley corda"
+    ],
+    "primary_muscles": [
+      "Tríceps"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Polia",
+    "image_count": 2
+  },
+  {
+    "id": "EZ-Bar_Skullcrusher",
+    "name": "Tríceps testa",
+    "aliases": [
+      "triceps testa com barra",
+      "skull crusher",
+      "skullcrusher",
+      "testa",
+      "triceps testa barra w",
+      "triceps testa com barra w"
+    ],
+    "primary_muscles": [
+      "Tríceps"
+    ],
+    "secondary_muscles": [
+      "Antebraços"
+    ],
+    "equipment": "Barra W",
+    "image_count": 2
+  },
+  {
+    "id": "Seated_Triceps_Press",
+    "name": "Tríceps francês com halter",
+    "aliases": [
+      "triceps frances",
+      "frances",
+      "triceps frances halter",
+      "triceps frances sentado"
+    ],
+    "primary_muscles": [
+      "Tríceps"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Halteres",
+    "image_count": 2
+  },
+  {
+    "id": "Cable_Rope_Overhead_Triceps_Extension",
+    "name": "Tríceps francês na polia",
+    "aliases": [
+      "triceps frances polia",
+      "triceps acima da cabeca na polia",
+      "triceps overhead",
+      "triceps frances na corda"
+    ],
+    "primary_muscles": [
+      "Tríceps"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Polia",
+    "image_count": 2
+  },
+  {
+    "id": "Bench_Dips",
+    "name": "Tríceps no banco",
+    "aliases": [
+      "mergulho no banco",
+      "triceps banco",
+      "mergulho banco",
+      "bench dips",
+      "dips no banco"
+    ],
+    "primary_muscles": [
+      "Tríceps"
+    ],
+    "secondary_muscles": [
+      "Peito",
+      "Ombros"
+    ],
+    "equipment": "Peso do corpo",
+    "image_count": 2
+  },
+  {
+    "id": "Dips_-_Triceps_Version",
+    "name": "Paralelas (foco no tríceps)",
+    "aliases": [
+      "paralelas triceps",
+      "mergulho triceps",
+      "dips triceps",
+      "paralelas",
+      "mergulho nas paralelas"
+    ],
+    "primary_muscles": [
+      "Tríceps"
+    ],
+    "secondary_muscles": [
+      "Peito",
+      "Ombros"
+    ],
+    "equipment": "Peso do corpo",
+    "image_count": 2
+  },
+  {
+    "id": "Tricep_Dumbbell_Kickback",
+    "name": "Tríceps coice",
+    "aliases": [
+      "coice",
+      "triceps coice com halter",
+      "kickback",
+      "triceps kickback"
+    ],
+    "primary_muscles": [
+      "Tríceps"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Halteres",
+    "image_count": 2
+  },
+  {
+    "id": "Barbell_Squat",
+    "name": "Agachamento livre com barra",
+    "aliases": [
+      "agachamento",
+      "agachamento livre",
+      "agachamento com barra",
+      "squat",
+      "agachamento barra"
+    ],
+    "primary_muscles": [
+      "Quadríceps"
+    ],
+    "secondary_muscles": [
+      "Panturrilhas",
+      "Glúteos",
+      "Posterior de coxa",
+      "Lombar"
+    ],
+    "equipment": "Barra",
+    "image_count": 2
+  },
+  {
+    "id": "Goblet_Squat",
+    "name": "Agachamento goblet",
+    "aliases": [
+      "goblet",
+      "agachamento com halter",
+      "agachamento taça",
+      "agachamento taca"
+    ],
+    "primary_muscles": [
+      "Quadríceps"
+    ],
+    "secondary_muscles": [
+      "Panturrilhas",
+      "Glúteos",
+      "Posterior de coxa",
+      "Ombros"
+    ],
+    "equipment": "Kettlebell",
+    "image_count": 2
+  },
+  {
+    "id": "Hack_Squat",
+    "name": "Agachamento hack",
+    "aliases": [
+      "hack",
+      "hack squat",
+      "agachamento na maquina hack",
+      "agachamento no hack"
+    ],
+    "primary_muscles": [
+      "Quadríceps"
+    ],
+    "secondary_muscles": [
+      "Panturrilhas",
+      "Glúteos",
+      "Posterior de coxa"
+    ],
+    "equipment": "Máquina",
+    "image_count": 2
+  },
+  {
+    "id": "Smith_Machine_Squat",
+    "name": "Agachamento no smith",
+    "aliases": [
+      "agachamento smith",
+      "smith squat",
+      "agachamento no smith machine",
+      "agachamento guiado"
+    ],
+    "primary_muscles": [
+      "Quadríceps"
+    ],
+    "secondary_muscles": [
+      "Panturrilhas",
+      "Glúteos",
+      "Posterior de coxa",
+      "Lombar"
+    ],
+    "equipment": "Máquina",
+    "image_count": 2
+  },
+  {
+    "id": "Bodyweight_Squat",
+    "name": "Agachamento com peso do corpo",
+    "aliases": [
+      "agachamento livre sem peso",
+      "agachamento sem peso",
+      "air squat",
+      "agachamento corporal"
+    ],
+    "primary_muscles": [
+      "Quadríceps"
+    ],
+    "secondary_muscles": [
+      "Glúteos",
+      "Posterior de coxa"
+    ],
+    "equipment": "Peso do corpo",
+    "image_count": 2
+  },
+  {
+    "id": "Leg_Press",
+    "name": "Leg press 45°",
+    "aliases": [
+      "leg press",
+      "legpress",
+      "leg 45",
+      "leg press 45",
+      "leg press inclinado"
+    ],
+    "primary_muscles": [
+      "Quadríceps"
+    ],
+    "secondary_muscles": [
+      "Panturrilhas",
+      "Glúteos",
+      "Posterior de coxa"
+    ],
+    "equipment": "Máquina",
+    "image_count": 2
+  },
+  {
+    "id": "Leg_Extensions",
+    "name": "Cadeira extensora",
+    "aliases": [
+      "extensora",
+      "extensora de pernas",
+      "leg extension",
+      "extensao de pernas",
+      "extensao de joelhos"
+    ],
+    "primary_muscles": [
+      "Quadríceps"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Máquina",
+    "image_count": 2
+  },
+  {
+    "id": "Lying_Leg_Curls",
+    "name": "Mesa flexora",
+    "aliases": [
+      "flexora deitada",
+      "flexora deitado",
+      "leg curl deitado",
+      "mesa flexora de pernas"
+    ],
+    "primary_muscles": [
+      "Posterior de coxa"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Máquina",
+    "image_count": 2
+  },
+  {
+    "id": "Seated_Leg_Curl",
+    "name": "Cadeira flexora",
+    "aliases": [
+      "flexora sentada",
+      "flexora sentado",
+      "leg curl sentado",
+      "flexora"
+    ],
+    "primary_muscles": [
+      "Posterior de coxa"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Máquina",
+    "image_count": 2
+  },
+  {
+    "id": "Dumbbell_Lunges",
+    "name": "Avanço com halteres",
+    "aliases": [
+      "avanco",
+      "afundo",
+      "afundo com halteres",
+      "avanco halter",
+      "lunge",
+      "afundo halter",
+      "avanço"
+    ],
+    "primary_muscles": [
+      "Quadríceps"
+    ],
+    "secondary_muscles": [
+      "Panturrilhas",
+      "Glúteos",
+      "Posterior de coxa"
+    ],
+    "equipment": "Halteres",
+    "image_count": 2
+  },
+  {
+    "id": "Barbell_Walking_Lunge",
+    "name": "Passada com barra",
+    "aliases": [
+      "passada",
+      "walking lunge",
+      "avanco caminhando",
+      "passada caminhando",
+      "afundo caminhando"
+    ],
+    "primary_muscles": [
+      "Quadríceps"
+    ],
+    "secondary_muscles": [
+      "Panturrilhas",
+      "Glúteos",
+      "Posterior de coxa"
+    ],
+    "equipment": "Barra",
+    "image_count": 2
+  },
+  {
+    "id": "Split_Squat_with_Dumbbells",
+    "name": "Agachamento búlgaro",
+    "aliases": [
+      "bulgaro",
+      "agachamento bulgaro",
+      "afundo bulgaro",
+      "agachamento bulgaro com halteres",
+      "split squat",
+      "bulgarian split squat",
+      "agachamento unilateral"
+    ],
+    "primary_muscles": [
+      "Quadríceps"
+    ],
+    "secondary_muscles": [
+      "Glúteos",
+      "Posterior de coxa"
+    ],
+    "equipment": "Halteres",
+    "image_count": 2
+  },
+  {
+    "id": "Dumbbell_Step_Ups",
+    "name": "Step-up com halteres",
+    "aliases": [
+      "step up",
+      "subida no banco",
+      "subida no step",
+      "step-up",
+      "stepup"
+    ],
+    "primary_muscles": [
+      "Quadríceps"
+    ],
+    "secondary_muscles": [
+      "Panturrilhas",
+      "Glúteos",
+      "Posterior de coxa"
+    ],
+    "equipment": "Halteres",
+    "image_count": 2
+  },
+  {
+    "id": "Thigh_Abductor",
+    "name": "Cadeira abdutora",
+    "aliases": [
+      "abdutora",
+      "abdutor",
+      "maquina abdutora",
+      "abducao de quadril na maquina"
+    ],
+    "primary_muscles": [
+      "Abdutores"
+    ],
+    "secondary_muscles": [
+      "Glúteos"
+    ],
+    "equipment": "Máquina",
+    "image_count": 2
+  },
+  {
+    "id": "Thigh_Adductor",
+    "name": "Cadeira adutora",
+    "aliases": [
+      "adutora",
+      "adutor",
+      "maquina adutora",
+      "aducao de quadril na maquina"
+    ],
+    "primary_muscles": [
+      "Adutores"
+    ],
+    "secondary_muscles": [
+      "Glúteos",
+      "Posterior de coxa"
+    ],
+    "equipment": "Máquina",
+    "image_count": 2
+  },
+  {
+    "id": "Standing_Calf_Raises",
+    "name": "Panturrilha em pé",
+    "aliases": [
+      "panturrilha",
+      "gemeos",
+      "gemeos em pe",
+      "panturrilha em pe na maquina",
+      "elevacao de panturrilha",
+      "calf raise",
+      "panturrilha no smith"
+    ],
+    "primary_muscles": [
+      "Panturrilhas"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Máquina",
+    "image_count": 2
+  },
+  {
+    "id": "Seated_Calf_Raise",
+    "name": "Panturrilha sentado",
+    "aliases": [
+      "gemeos sentado",
+      "panturrilha sentada",
+      "panturrilha na maquina sentado",
+      "soleo sentado"
+    ],
+    "primary_muscles": [
+      "Panturrilhas"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Máquina",
+    "image_count": 2
+  },
+  {
+    "id": "Calf_Press_On_The_Leg_Press_Machine",
+    "name": "Panturrilha no leg press",
+    "aliases": [
+      "panturrilha leg press",
+      "gemeos no leg",
+      "gemeos leg press",
+      "panturrilha no leg"
+    ],
+    "primary_muscles": [
+      "Panturrilhas"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Máquina",
+    "image_count": 2
+  },
+  {
+    "id": "Barbell_Hip_Thrust",
+    "name": "Elevação pélvica",
+    "aliases": [
+      "hip thrust",
+      "elevacao pelvica com barra",
+      "hipthrust",
+      "ponte com barra",
+      "elevacao de quadril"
+    ],
+    "primary_muscles": [
+      "Glúteos"
+    ],
+    "secondary_muscles": [
+      "Panturrilhas",
+      "Posterior de coxa"
+    ],
+    "equipment": "Barra",
+    "image_count": 2
+  },
+  {
+    "id": "Barbell_Glute_Bridge",
+    "name": "Ponte de glúteo com barra",
+    "aliases": [
+      "ponte de gluteo",
+      "glute bridge",
+      "ponte gluteo",
+      "ponte com barra no chao"
+    ],
+    "primary_muscles": [
+      "Glúteos"
+    ],
+    "secondary_muscles": [
+      "Panturrilhas",
+      "Posterior de coxa"
+    ],
+    "equipment": "Barra",
+    "image_count": 2
+  },
+  {
+    "id": "Glute_Kickback",
+    "name": "Coice de glúteo",
+    "aliases": [
+      "coice no gluteo",
+      "gluteo quatro apoios",
+      "glute kickback",
+      "coice de gluteo",
+      "coice gluteo"
+    ],
+    "primary_muscles": [
+      "Glúteos"
+    ],
+    "secondary_muscles": [
+      "Posterior de coxa"
+    ],
+    "equipment": "Peso do corpo",
+    "image_count": 2
+  },
+  {
+    "id": "One-Legged_Cable_Kickback",
+    "name": "Coice de glúteo na polia",
+    "aliases": [
+      "coice na polia",
+      "gluteo na polia",
+      "kickback na polia",
+      "coice polia"
+    ],
+    "primary_muscles": [
+      "Glúteos"
+    ],
+    "secondary_muscles": [
+      "Posterior de coxa"
+    ],
+    "equipment": "Polia",
+    "image_count": 2
+  },
+  {
+    "id": "Crunches",
+    "name": "Abdominal crunch",
+    "aliases": [
+      "abdominal",
+      "abdominal tradicional",
+      "crunch",
+      "abdominal supra",
+      "abdominal no solo"
+    ],
+    "primary_muscles": [
+      "Abdômen"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Peso do corpo",
+    "image_count": 2
+  },
+  {
+    "id": "Cable_Crunch",
+    "name": "Abdominal na polia",
+    "aliases": [
+      "abdominal polia",
+      "crunch na polia",
+      "abdominal corda",
+      "abdominal na polia alta"
+    ],
+    "primary_muscles": [
+      "Abdômen"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Polia",
+    "image_count": 2
+  },
+  {
+    "id": "Hanging_Leg_Raise",
+    "name": "Elevação de pernas na barra",
+    "aliases": [
+      "elevacao de pernas suspenso",
+      "elevacao de pernas na barra fixa",
+      "hanging leg raise",
+      "abdominal na barra",
+      "elevacao de pernas pendurado"
+    ],
+    "primary_muscles": [
+      "Abdômen"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Peso do corpo",
+    "image_count": 2
+  },
+  {
+    "id": "Flat_Bench_Lying_Leg_Raise",
+    "name": "Elevação de pernas deitado",
+    "aliases": [
+      "elevacao de pernas",
+      "abdominal infra",
+      "infra",
+      "elevacao de pernas no banco"
+    ],
+    "primary_muscles": [
+      "Abdômen"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Peso do corpo",
+    "image_count": 2
+  },
+  {
+    "id": "Plank",
+    "name": "Prancha",
+    "aliases": [
+      "prancha abdominal",
+      "plank",
+      "prancha isometrica",
+      "prancha frontal"
+    ],
+    "primary_muscles": [
+      "Abdômen"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Peso do corpo",
+    "image_count": 2
+  },
+  {
+    "id": "Side_Bridge",
+    "name": "Prancha lateral",
+    "aliases": [
+      "side plank",
+      "prancha de lado",
+      "prancha lateral isometrica"
+    ],
+    "primary_muscles": [
+      "Abdômen"
+    ],
+    "secondary_muscles": [
+      "Ombros"
+    ],
+    "equipment": "Peso do corpo",
+    "image_count": 2
+  },
+  {
+    "id": "Russian_Twist",
+    "name": "Rotação russa",
+    "aliases": [
+      "russian twist",
+      "abdominal rotacao",
+      "abdominal obliquo",
+      "giro russo",
+      "rotacao russa com peso"
+    ],
+    "primary_muscles": [
+      "Abdômen"
+    ],
+    "secondary_muscles": [
+      "Lombar"
+    ],
+    "equipment": "Peso do corpo",
+    "image_count": 2
+  },
+  {
+    "id": "Mountain_Climbers",
+    "name": "Escalador",
+    "aliases": [
+      "mountain climber",
+      "mountain climbers",
+      "escaladores",
+      "escalador no solo"
+    ],
+    "primary_muscles": [
+      "Quadríceps"
+    ],
+    "secondary_muscles": [
+      "Peito",
+      "Posterior de coxa",
+      "Ombros"
+    ],
+    "equipment": "Outro",
+    "image_count": 2
+  },
+  {
+    "id": "Ab_Crunch_Machine",
+    "name": "Abdominal na máquina",
+    "aliases": [
+      "abdominal maquina",
+      "maquina de abdominal",
+      "abdominal no aparelho"
+    ],
+    "primary_muscles": [
+      "Abdômen"
+    ],
+    "secondary_muscles": [],
+    "equipment": "Máquina",
+    "image_count": 2
+  }
+]

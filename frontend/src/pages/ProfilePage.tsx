@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 
+import MyTrainerSection from "@/components/profile/MyTrainerSection";
 import ProfileEditForm from "@/components/profile/ProfileEditForm";
 import { useAuth } from "@/contexts/AuthContext";
 import { useProject } from "@/contexts/ProjectContext";
@@ -51,6 +52,8 @@ export default function ProfilePage() {
       <h1 className="text-lg font-semibold">Perfil</h1>
 
       <ProfileEditForm />
+
+      <MyTrainerSection />
 
       {project && (
         <div className="card">

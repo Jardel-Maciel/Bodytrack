@@ -2,12 +2,15 @@ import { useState } from "react";
 import { useQuery, useQueryClient } from "@tanstack/react-query";
 
 import NewWorkoutForm from "@/components/workout/NewWorkoutForm";
+import ExerciseThumb from "@/components/workout/ExerciseThumb";
 import SessionLogger from "@/components/workout/SessionLogger";
+import { useAuth } from "@/contexts/AuthContext";
 import { useProject } from "@/contexts/ProjectContext";
 import * as workoutService from "@/services/workoutService";
 
 export default function WorkoutPage() {
   const { project, loading: projectLoading } = useProject();
+  const { user } = useAuth();
   const queryClient = useQueryClient();
   const [showNewForm, setShowNewForm] = useState(false);
   const [loggingWorkoutId, setLoggingWorkoutId] = useState<string | null>(null);
@@ -57,6 +60,7 @@ export default function WorkoutPage() {
           onSubmit={async (input) => {
             await workoutService.logSession(project.id, loggingWorkout.id, input);
             queryClient.invalidateQueries({ queryKey: ["dashboard", project.id] });
+            queryClient.invalidateQueries({ queryKey: ["gamification"] });
             setLoggingWorkoutId(null);
             setJustLogged(loggingWorkout.name);
           }}
@@ -84,6 +88,9 @@ export default function WorkoutPage() {
                 {workout.muscle_group && (
                   <p className="text-xs text-foreground-muted">{workout.muscle_group}</p>
                 )}
+                {workout.created_by_trainer_id && workout.created_by_trainer_id !== user?.id && (
+                  <p className="text-xs text-accent">Montado pelo seu personal</p>
+                )}
               </div>
               <button
                 type="button"
@@ -93,11 +100,14 @@ export default function WorkoutPage() {
                 Registrar sessão
               </button>
             </div>
-            <ul className="mt-3 space-y-1">
+            <ul className="mt-3 space-y-2">
               {workout.exercises.map((ex) => (
-                <li key={ex.id} className="text-sm text-foreground-muted">
-                  {ex.name}
-                  {ex.target_sets && ex.target_reps ? ` — ${ex.target_sets}×${ex.target_reps}` : ""}
+                <li key={ex.id} className="flex items-center gap-3 text-sm text-foreground-muted">
+                  <ExerciseThumb exercise={ex} className="h-10 w-10" />
+                  <span>
+                    {ex.name}
+                    {ex.target_sets && ex.target_reps ? ` — ${ex.target_sets}×${ex.target_reps}` : ""}
+                  </span>
                 </li>
               ))}
             </ul>

@@ -8,7 +8,7 @@ from app.models.user import User
 from app.repositories import user_repository
 from app.schemas.auth import LoginRequest, Token
 from app.schemas.user import UserCreate, UserRead, UserUpdate
-from app.services import auth_service
+from app.services import auth_service, gamification_service
 from app.services.auth_service import EmailAlreadyRegisteredError, InvalidCredentialsError
 
 router = APIRouter()
@@ -24,6 +24,7 @@ def register(payload: UserCreate, db: Session = Depends(get_db)) -> UserRead:
             name=payload.name,
             birth_date=payload.birth_date,
             height_cm=payload.height_cm,
+            role=payload.role,
         )
     except EmailAlreadyRegisteredError:
         raise HTTPException(status_code=status.HTTP_400_BAD_REQUEST, detail="E-mail já cadastrado.")
@@ -38,11 +39,14 @@ def login(payload: LoginRequest, db: Session = Depends(get_db)) -> Token:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED, detail="E-mail ou senha incorretos."
         )
+    gamification_service.record_access(db, user.id)
     return Token(access_token=create_access_token(subject=user.id))
 
 
 @router.get("/me", response_model=UserRead)
-def me(current_user: User = Depends(get_current_user)) -> UserRead:
+def me(db: Session = Depends(get_db), current_user: User = Depends(get_current_user)) -> UserRead:
+    # O app chama /auth/me ao abrir: é o "primeiro acesso do dia" de quem continua logado.
+    gamification_service.record_access(db, current_user.id)
     return current_user
 
 
@@ -57,6 +61,8 @@ def update_me(
     # não sobrescreve o valor já salvo — diferente do upsert de
     # medidas, aqui é um PATCH parcial de verdade.
     data = payload.model_dump(exclude_unset=True)
+    if data.get("role") is None:
+        data.pop("role", None)  # coluna NOT NULL: `role: null` não pode apagar o papel
     if data:
         current_user = user_repository.update(db, user=current_user, data=data)
     return current_user

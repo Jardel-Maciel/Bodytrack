@@ -50,3 +50,11 @@ def get_current_user(
 
 def get_current_user_id(current_user: User = Depends(get_current_user)) -> uuid.UUID:
     return current_user.id
+
+
+def require_trainer(current_user: User = Depends(get_current_user)) -> User:
+    """Libera só contas com papel "trainer". O papel sozinho NÃO dá acesso a nenhum aluno:
+    isso depende de um vínculo aceito pelo aluno (ver trainer_service.get_active_link)."""
+    if current_user.role != "trainer":
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="Área exclusiva para personal trainers.")
+    return current_user

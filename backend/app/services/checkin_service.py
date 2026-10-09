@@ -15,6 +15,7 @@ from typing import Any, Optional, Sequence
 
 from sqlalchemy.orm import Session
 
+from app.services import gamification_service
 from app.models.checkin import DailyCheckin
 from app.repositories import checkin_repository as repo
 from app.services.project_service import ProjectNotFoundError, get_project_or_404
@@ -39,8 +40,12 @@ def upsert_checkin(
     existing = repo.get_by_date(db, project_id=project_id, on_date=data["date"])
     if existing is not None:
         data_without_date = {k: v for k, v in data.items() if k != "date"}
-        return repo.update(db, checkin=existing, data=data_without_date)
-    return repo.create(db, project_id=project_id, data=data)
+        checkin = repo.update(db, checkin=existing, data=data_without_date)
+    else:
+        checkin = repo.create(db, project_id=project_id, data=data)
+    # Já gravado: agora tenta pontuar (melhor esforço, nunca derruba o check-in).
+    gamification_service.on_checkin(db, user_id, checkin)
+    return checkin
 
 
 def list_checkins(

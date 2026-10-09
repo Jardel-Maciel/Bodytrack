@@ -1,6 +1,8 @@
 import { Outlet } from "react-router-dom";
 import Sidebar from "./Sidebar";
 import BottomNav from "./BottomNav";
+import PointsToast from "@/components/gamification/PointsToast";
+import NoticeBell from "./NoticeBell";
 import { useOfflineSync } from "@/hooks/useOfflineSync";
 
 /**
@@ -19,9 +21,13 @@ export default function AppLayout() {
 
   return (
     <div className="flex min-h-screen bg-background">
+      <PointsToast />
       <Sidebar />
       <div className="flex-1">
         <main className="mx-auto max-w-3xl px-4 pb-24 pt-6 md:pb-10">
+          <div className="mb-3 flex justify-end">
+            <NoticeBell />
+          </div>
           {pending > 0 && (
             <div className="mb-4 rounded-xl border border-warning/40 bg-warning/10 px-4 py-2.5 text-center text-xs font-medium text-warning">
               {pending === 1

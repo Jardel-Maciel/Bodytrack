@@ -2,9 +2,10 @@ import uuid
 from datetime import date
 from typing import Optional
 
-from pydantic import BaseModel, Field
+from pydantic import BaseModel, Field, computed_field
 
 from app.schemas.common import ORMModel
+from app.services import exercise_catalog_service
 
 
 class WorkoutExerciseCreate(BaseModel):
@@ -18,6 +19,18 @@ class WorkoutExerciseCreate(BaseModel):
 
 class WorkoutExerciseRead(ORMModel, WorkoutExerciseCreate):
     id: uuid.UUID
+
+    @computed_field  # type: ignore[prop-decorator]
+    @property
+    def catalog_id(self) -> Optional[str]:
+        """
+        ID do exercício no catálogo de demonstração (ou None se não houver
+        correspondência). Calculado a partir do `name` a cada leitura — não
+        é uma coluna do banco, então treinos antigos também ganham imagem.
+        O frontend monta a URL: /exercises/{catalog_id}/0.webp
+        """
+        entry = exercise_catalog_service.find_by_name(self.name)
+        return entry["id"] if entry else None
 
 
 class WorkoutCreate(BaseModel):
@@ -34,6 +47,7 @@ class WorkoutRead(ORMModel):
     muscle_group: Optional[str]
     notes: Optional[str]
     is_active: bool
+    created_by_trainer_id: Optional[uuid.UUID] = None
     exercises: list[WorkoutExerciseRead]
 
 

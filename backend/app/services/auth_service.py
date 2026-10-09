@@ -14,7 +14,7 @@ class InvalidCredentialsError(Exception):
 
 
 def register_user(
-    db: Session, *, email: str, password: str, name: str, birth_date=None, height_cm=None
+    db: Session, *, email: str, password: str, name: str, birth_date=None, height_cm=None, role: str = "student"
 ) -> User:
     if user_repository.get_by_email(db, email):
         raise EmailAlreadyRegisteredError()
@@ -25,6 +25,7 @@ def register_user(
         name=name,
         birth_date=birth_date,
         height_cm=height_cm,
+        role=role,
     )
 
 

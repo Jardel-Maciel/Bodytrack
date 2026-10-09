@@ -1,7 +1,7 @@
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from "react";
 
 import * as authService from "@/services/authService";
-import type { AuthUser, ProfileUpdateInput } from "@/services/authService";
+import type { AuthUser, ProfileUpdateInput, UserRole } from "@/services/authService";
 
 interface AuthContextValue {
   user: AuthUser | null;
@@ -9,7 +9,7 @@ interface AuthContextValue {
   isAuthenticated: boolean;
   loading: boolean;
   loginWithPassword: (email: string, password: string) => Promise<void>;
-  registerAndLogin: (input: { email: string; password: string; name: string }) => Promise<void>;
+  registerAndLogin: (input: { email: string; password: string; name: string; role?: UserRole }) => Promise<void>;
   updateProfile: (input: ProfileUpdateInput) => Promise<AuthUser>;
   logout: () => void;
 }
@@ -63,7 +63,7 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     persist(access_token, me);
   };
 
-  const registerAndLogin = async (input: { email: string; password: string; name: string }) => {
+  const registerAndLogin = async (input: { email: string; password: string; name: string; role?: UserRole }) => {
     await authService.register(input);
     await loginWithPassword(input.email, input.password);
   };

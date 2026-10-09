@@ -7,7 +7,11 @@ import HomePage from "@/pages/HomePage";
 import TodayPage from "@/pages/TodayPage";
 import WorkoutPage from "@/pages/WorkoutPage";
 import EvolutionPage from "@/pages/EvolutionPage";
+import ChatPage from "@/pages/ChatPage";
+import NoticesPage from "@/pages/NoticesPage";
 import ProfilePage from "@/pages/ProfilePage";
+import TrainerStudentPage from "@/pages/TrainerStudentPage";
+import TrainerStudentsPage from "@/pages/TrainerStudentsPage";
 
 /**
  * Estrutura de navegação principal, conforme especificado:
@@ -32,6 +36,10 @@ export default function App() {
         <Route path="/treino" element={<WorkoutPage />} />
         <Route path="/evolucao" element={<EvolutionPage />} />
         <Route path="/perfil" element={<ProfilePage />} />
+        <Route path="/avisos" element={<NoticesPage />} />
+        <Route path="/chat/:linkId" element={<ChatPage />} />
+        <Route path="/alunos" element={<TrainerStudentsPage />} />
+        <Route path="/alunos/:linkId" element={<TrainerStudentPage />} />
       </Route>
 
       <Route path="*" element={<Navigate to="/" replace />} />

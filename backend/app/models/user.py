@@ -28,6 +28,9 @@ class User(UUIDMixin, TimestampMixin, Base):
     height_cm: Mapped[Optional[float]] = mapped_column(Float, nullable=True)
 
     is_active: Mapped[bool] = mapped_column(default=True, nullable=False)
+    # "student" (padrão) ou "trainer". O papel NÃO dá acesso a dados de ninguém:
+    # o acesso do personal aos alunos vem só de vínculos aceitos (TrainerStudentLink).
+    role: Mapped[str] = mapped_column(String(20), default="student", server_default="student", nullable=False)
 
     # Unidades preferidas — hoje só kg/cm/L são usados, mas já
     # deixamos o campo para não travar o produto no futuro (ex.: lb)

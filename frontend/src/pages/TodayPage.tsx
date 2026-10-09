@@ -91,6 +91,7 @@ export default function TodayPage() {
       if (!result.queued) {
         queryClient.invalidateQueries({ queryKey: ["dashboard", project.id] });
         queryClient.invalidateQueries({ queryKey: ["series", project.id] });
+        queryClient.invalidateQueries({ queryKey: ["gamification"] });
       }
     } finally {
       setSaving(false);

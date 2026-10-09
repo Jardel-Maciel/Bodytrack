@@ -3,6 +3,8 @@ import { useState } from "react";
 import type { Workout } from "@/types";
 import { todayIso } from "@/utils/format";
 
+import ExerciseThumb from "./ExerciseThumb";
+
 interface SetInput {
   reps: string;
   load_kg: string;
@@ -56,7 +58,10 @@ export default function SessionLogger({ workout, onSubmit, onCancel }: Props) {
       <p className="stat-label">Registrar sessão — {workout.name}</p>
       {workout.exercises.map((exercise) => (
         <div key={exercise.id} className="space-y-2">
-          <p className="text-sm font-medium">{exercise.name}</p>
+          <div className="flex items-center gap-3">
+            <ExerciseThumb exercise={exercise} />
+            <p className="text-sm font-medium">{exercise.name}</p>
+          </div>
           {setsByExercise[exercise.id].map((set, index) => (
             <div key={index} className="flex items-center gap-2">
               <span className="w-14 text-xs text-foreground-muted">Série {index + 1}</span>

@@ -16,6 +16,8 @@ class Settings(BaseSettings):
     APP_NAME: str = "BodyTrack API"
     ENV: str = "development"
     DEBUG: bool = True
+    # Fuso que define a virada do "dia" na gamificação (meta diária e primeiro acesso do dia).
+    APP_TIMEZONE: str = "America/Sao_Paulo"
 
     # Banco de dados
     DATABASE_URL: str = "postgresql+psycopg2://bodytrack:bodytrack@localhost:5432/bodytrack"

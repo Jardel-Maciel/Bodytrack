@@ -2,6 +2,7 @@ import { useState, type FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { useAuth } from "@/contexts/AuthContext";
+import type { UserRole } from "@/services/authService";
 
 export default function LoginPage() {
   const { loginWithPassword, registerAndLogin } = useAuth();
@@ -11,6 +12,7 @@ export default function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
+  const [role, setRole] = useState<UserRole>("student");
   const [error, setError] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
 
@@ -22,7 +24,7 @@ export default function LoginPage() {
       if (mode === "login") {
         await loginWithPassword(email, password);
       } else {
-        await registerAndLogin({ email, password, name });
+        await registerAndLogin({ email, password, name, role });
       }
       navigate("/", { replace: true });
     } catch (err: any) {
@@ -47,6 +49,29 @@ export default function LoginPage() {
         </p>
 
         <form className="space-y-3" onSubmit={handleSubmit}>
+          {mode === "register" && (
+            <div className="grid grid-cols-2 gap-2" role="radiogroup" aria-label="Tipo de conta">
+              {(
+                [
+                  ["student", "Sou aluno"],
+                  ["trainer", "Sou personal"],
+                ] as const
+              ).map(([value, label]) => (
+                <button
+                  key={value}
+                  type="button"
+                  role="radio"
+                  aria-checked={role === value}
+                  onClick={() => setRole(value)}
+                  className={`rounded-xl border py-2 text-sm font-medium ${
+                    role === value ? "border-accent bg-accent-muted text-white" : "border-border text-foreground-muted"
+                  }`}
+                >
+                  {label}
+                </button>
+              ))}
+            </div>
+          )}
           {mode === "register" && (
             <input
               type="text"

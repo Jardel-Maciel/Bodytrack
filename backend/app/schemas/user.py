@@ -1,5 +1,5 @@
 from datetime import date
-from typing import Optional
+from typing import Literal, Optional
 
 from pydantic import BaseModel, EmailStr, Field
 
@@ -12,6 +12,7 @@ class UserCreate(BaseModel):
     name: str = Field(min_length=1, max_length=120)
     birth_date: Optional[date] = None
     height_cm: Optional[float] = Field(default=None, gt=0)
+    role: Literal["student", "trainer"] = "student"
 
 
 class UserRead(TimestampedSchema):
@@ -24,9 +25,11 @@ class UserRead(TimestampedSchema):
     unit_weight: str
     unit_length: str
     unit_volume: str
+    role: str = "student"
 
 
 class UserUpdate(BaseModel):
     name: Optional[str] = Field(default=None, min_length=1, max_length=120)
     birth_date: Optional[date] = None
     height_cm: Optional[float] = Field(default=None, gt=0)
+    role: Optional[Literal["student", "trainer"]] = None

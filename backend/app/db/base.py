@@ -24,3 +24,7 @@ from app.models.goal import Goal  # noqa: F401
 from app.models.achievement import Achievement  # noqa: F401
 from app.models.notification import Notification  # noqa: F401
 from app.models.report import WeeklyReport  # noqa: F401
+from app.models.trainer_link import TrainerStudentLink  # noqa: F401
+from app.models.app_notice import AppNotice  # noqa: F401
+from app.models.trainer_message import TrainerMessage  # noqa: F401
+from app.models.point_event import PointEvent  # noqa: F401

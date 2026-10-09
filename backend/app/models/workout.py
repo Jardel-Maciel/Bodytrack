@@ -36,6 +36,10 @@ class Workout(UUIDMixin, TimestampMixin, Base):
     muscle_group: Mapped[Optional[str]] = mapped_column(String(100), nullable=True)
     notes: Mapped[Optional[str]] = mapped_column(Text, nullable=True)
     is_active: Mapped[bool] = mapped_column(default=True, nullable=False)
+    # Preenchido quando o treino foi montado por um personal para o aluno dono do projeto.
+    created_by_trainer_id: Mapped[Optional[uuid.UUID]] = mapped_column(
+        Uuid(as_uuid=True), ForeignKey("users.id", ondelete="SET NULL"), index=True, nullable=True
+    )
 
     project: Mapped["Project"] = relationship(back_populates="workouts")
     exercises: Mapped[List["WorkoutExercise"]] = relationship(
